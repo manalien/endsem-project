@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header-section">
+      <img class="header-image" src="./pictures/header6.jpg">
+      <div class="top">
+        <div class="profile-img">
+          <img class="profile" src="./pictures/pfp.jpg">
+        </div>
+        <button>Share link</button>
+      </div>
+    </div>  
+
+    <h1>Group Project</h1>
+
+    <div class="flex-container">
+        <div class="notice-board">
+            <div class="headings">
+                <img class="notice-icon icons" src="./icons/compose_lightgray.svg">
+                <p class="announcements">Announcements</p>
+            </div>
+            <ul class="notice-points">
+                <li>hi</li>
+                <li>hello</li>
+                <li>hey</li>
+                <li>hola</li>
+            </ul>
+        </div>
+
+        <div class="people">
+            <div class="headings">
+                <img class="people-icon icons" src="./icons/people.png">
+                <p class="announcements">People</p>
+            </div>
+            <div class="people-info">
+                <table>
+                    <tr>
+                      <th class="name-column">Name</th>
+                      <th class="email-column">Email</th>
+                    </tr>
+                    <tr class="list">
+                      <td class="name-column">Muskan</td>
+                      <td class="email-column">muskan@gmail.com</td>
+                    </tr>
+                    <tr class="list">
+                      <td class="name-column">Harsh</td>
+                      <td class="email-column">harsh@gmail.com</td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="meetings">
+        <div class="headings">
+            <img class="meeting-icon icons" src="./icons/meetings.png">
+            <p class="announcements">Meetings</p>
+        </div>
+        <div id='calendar'></div>
+    </div>
+    
+    <div class="tasks">
+        <div class="headings">
+            <img class="tasks-icon icons" src="./icons/tasks.png">
+            <p class="announcements">Tasks</p>
+        </div>
+
+        <div class="tasks-info">
+          <table>
+              <tr>
+                <th class="title-column">Title</th>
+                <th class="status-column">Status</th>
+                <th class="due-date-column">Due date</th>
+                <th class="last-edited-by-column">Last edited by</th>
+              </tr>
+              <tr class="list">
+                <td class="title-column first">Make Coffee</td> 
+                <td class="status-column first">In progress</td>
+                <td class="due-date-column first">Now</td>
+                <td class="last-edited-by-column first">Joyce</td>
+              </tr>
+            </table>
+      </div>
+    </div>
+
+    <div class="documents">
+      <div class="headings">
+          <img class="document-icon icons" src="./icons/tasks.png">
+          <p class="announcements">Documents</p>
+      </div>
+      <div class="document-info">
+        <table class="list">
+            <tr>
+              <th class="name-column">Name</th>
+              <th class="link-column">Link</th>
+            </tr>
+          </table>
+    </div>
+  </div>
+
+  <div class="end"></div>
+
+    
+  <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var calendarEl = document.getElementById('calendar');
+
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth',
+          selectable: true,
+          editable: true,
+          headerToolbar: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'dayGridMonth,timeGridWeek,timeGridDay'
+          },
+          dateClick: function (info) {
+            const title = prompt('Enter event title:');
+            if (title) {
+              calendar.addEvent({
+                title: title,
+                start: info.dateStr,
+                allDay: true
+              });
+            }
+          },
+          events: [
+            { title: 'Class Test', start: '2025-05-01' },
+            { title: 'Hackathon', start: '2025-05-05' }
+          ]
+        });
+
+      calendar.render();
+      });
+  </script>
+
+  <script src="./script.js"></script>   
+</body>
+</html>
