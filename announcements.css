@@ -1,10 +1,6 @@
 .announcements-heading {
     margin-bottom: 0px;
-<<<<<<< HEAD:announcements.css
     width: 800px;
-=======
-    width: 700px;
->>>>>>> 0120cc57a534ad9d22883d7c15f8ad3a5bc4b3e7:groupProject/announcements.css
 }
 
 .announcements-main {
@@ -45,10 +41,6 @@
 
 .announcement-text:focus,
 .announcement-text.editing {
-<<<<<<< HEAD:announcements.css
-=======
-  /*border: 1px solid #4a90e2;*/
->>>>>>> 0120cc57a534ad9d22883d7c15f8ad3a5bc4b3e7:groupProject/announcements.css
   border: none;
   background-color: #f0f7ff;
   box-shadow: 0 0 4px rgba(74, 144, 226, 0.3);
@@ -56,12 +48,7 @@
 }
 
 .announcement-input {
-<<<<<<< HEAD:announcements.css
     width: 750px;
-=======
-    width: 90%;
-    max-width: 600px;
->>>>>>> 0120cc57a534ad9d22883d7c15f8ad3a5bc4b3e7:groupProject/announcements.css
     padding: 12px 20px;
     font-size: 16px;
     border: 2px solid #ccc;
