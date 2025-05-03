@@ -1,0 +1,312 @@
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.6); 
+    backdrop-filter: blur(6px);
+  }
+  
+  /* Modal content */
+  .modal-content {
+    background-color: rgb(141, 170, 217);
+    margin: 5% auto; 
+    padding: 20px;
+    border-radius: 14px;
+    width: 80%;
+    max-width: 700px;
+    color: white;
+    position: relative;
+    animation: fadeIn 0.4s ease;
+  }
+  
+  /* Modal header image */
+  .modal-header img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Modal body text */
+  .modal-body {
+    font-family: Plus Jakarta Sans;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .modal-body h1 {
+    color: rgb(74, 74, 74);
+    margin-bottom: 20px;
+  }
+
+  .modal-body p {
+    color:rgb(255, 250, 245);
+    font-weight: 500;
+    margin-top: 5px;
+    padding-top: 0px;
+  }
+  
+  /* Close button */
+  .close-button {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    font-size: 28px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .assignment-form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    background-color: #d8e0f9;
+    padding: 16px 16px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+  }
+  
+  /* General input styling */
+  .assignment-form input[type="text"],
+  .assignment-form input[type="date"] {
+    background-color: #f6f2ea;
+    font-size: 16px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-weight: 500;
+    text-align: center;
+    width: 140px;
+  }
+
+  .assignment-form input[type="text"] {
+    width: 110px; /* reduced from 200px */
+  }
+  
+  /* Checkbox looks better */
+  .assignment-form input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  /* Label for checkbox */
+  .assignment-form label {
+    font-size: 16px;
+    color: #333;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  /* Button styling */
+  .assignment-form button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .assignment-form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Modal Headings */
+  .modal h2,
+  .modal h3 {
+    font-size: 21px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .assignment-card {
+    background: #f9f9ff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 15px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  }
+  
+  .assignment-card h4 {
+    margin: 0;
+    font-size: 20px;
+    color: #4a4a4a;
+  }
+  
+  .assignment-card p {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .completed {
+    color: rgb(16, 113, 16);
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .not-completed {
+    color: rgb(204, 23, 23);
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .delete-assignment {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    color: #404040;
+    border: 2px solid #323232;
+    padding: 3px 8px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .course-card {
+    position: relative;
+  }
+  
+  .edit-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 15px;
+    font-family: Plus Jakarta Sans;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 11px;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    padding: 5px;
+    width: 150px;
+  }
+  
+  .dropdown.show {
+    display: block;
+  }
+  
+  .dropdown-toggle {
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu button {
+    background: transparent;
+    color: white;
+    font-size: 15px;
+    font-family: Plus Jakarta Sans;
+    border: none;
+    padding: 5px;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .dropdown-menu button:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .link-section {
+    background: #d8e0f9;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.link-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #f3f3f3;
+}
+
+.links-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.links-list li {
+    background: #f5f5f5;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    word-break: break-word;
+    font-size: 1rem;
+}
+
+.add-btn:hover {
+    background-color: #0069d9;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.input-group button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.add-btn {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input-group button:hover {
+    background-color: #218838;
+}
+
+.hidden {
+    display: none;
+}
