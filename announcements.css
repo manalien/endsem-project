@@ -1,0 +1,84 @@
+.announcements-heading {
+    margin-bottom: 0px;
+<<<<<<< HEAD:announcements.css
+    width: 800px;
+=======
+    width: 700px;
+>>>>>>> 0120cc57a534ad9d22883d7c15f8ad3a5bc4b3e7:groupProject/announcements.css
+}
+
+.announcements-main {
+    margin-left: 30px;
+}
+
+.announcements-button {
+    background-color: black;
+    margin-left: -100px;
+}
+
+.announcement-content {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.pin-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.announcement-text {
+  flex: 1;
+  min-height: 24px;
+  padding: 6px 10px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background-color: #fff;
+  transition: all 0.2s ease;
+}
+
+.announcement-text:hover {
+  background-color: #f5f5f5;
+  cursor: text;
+}
+
+.announcement-text:focus,
+.announcement-text.editing {
+<<<<<<< HEAD:announcements.css
+=======
+  /*border: 1px solid #4a90e2;*/
+>>>>>>> 0120cc57a534ad9d22883d7c15f8ad3a5bc4b3e7:groupProject/announcements.css
+  border: none;
+  background-color: #f0f7ff;
+  box-shadow: 0 0 4px rgba(74, 144, 226, 0.3);
+  outline: none;
+}
+
+.announcement-input {
+<<<<<<< HEAD:announcements.css
+    width: 750px;
+=======
+    width: 90%;
+    max-width: 600px;
+>>>>>>> 0120cc57a534ad9d22883d7c15f8ad3a5bc4b3e7:groupProject/announcements.css
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.announcement-input:focus {
+  border: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1)
+}
+
+.input-form {
+    display: none;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
