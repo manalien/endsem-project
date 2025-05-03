@@ -1,6 +1,6 @@
 .announcements-heading {
     margin-bottom: 0px;
-    width: 700px;
+    width: 800px;
 }
 
 .announcements-main {
@@ -41,7 +41,6 @@
 
 .announcement-text:focus,
 .announcement-text.editing {
-  /*border: 1px solid #4a90e2;*/
   border: none;
   background-color: #f0f7ff;
   box-shadow: 0 0 4px rgba(74, 144, 226, 0.3);
@@ -49,8 +48,7 @@
 }
 
 .announcement-input {
-    width: 90%;
-    max-width: 600px;
+    width: 750px;
     padding: 12px 20px;
     font-size: 16px;
     border: 2px solid #ccc;

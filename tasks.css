@@ -1,0 +1,8 @@
+.task-input, .date-input {
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    width: 100%;
+  }
+  
