@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./styles.css" rel="stylesheet">
+    <link href="./announcements.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header-section">
+        <img class="header-image" src="./pictures/header6.jpg">
+        <div class="top">
+          <div class="profile-img">
+            <img class="profile" src="./pictures/pfp.jpg">
+          </div>
+          <button class="share-button">Share code</button>
+        </div>
+      </div> 
+      
+      <h1>Group Project</h1>
+
+      <div class="flex-container">
+          <div class="quick-add-section">
+                <h2 class="quick-add-heading">Quick Add</h2>
+                <hr>
+                    <div class="quick-add-buttons">
+                        <button class="tasks">Task</button>
+                        <button class="docs">Doc</button>
+                        <button class="people">Person</button>
+                        <button class="meeting">Meeting</button>
+                    </div>
+          </div>
+
+          <div class="announcements-section">
+                <div class="announcements-top section-top">
+                    <h2 class="announcements-heading heading">Announcements</h2>
+                    <button class="add-new announcements-button">+ New</button>
+                </div>
+
+                <div class="input-form">
+                  <input type="text" class="announcement-input"/>
+                </div>
+
+                <div class="announcements-main">
+                  <div class="announcement-content">
+                  </div>
+                </div>
+              </div>
+      </div>
+
+      <div class="flex-container row-two">
+          <div class="tasks-section">
+              <h2 class="tasks-heading heading">Tasks</h2>
+            
+              <table class="tasks-table">
+                <thead>
+                  <tr>
+                    <th>Title</th>
+                    <th>Status</th>
+                    <th>Due date</th>
+                    <th>Last edited by</th>
+                    <th>Last edited</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="dot"></span></td>
+                    <td><span class="status-tag status not-started">● Not started</span></td>
+                    <td></td>
+                    <td>May 2, 2025 </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="dot"></span></td>
+                    <td><span class="status-tag status not-started">● Not started</span></td>
+                    <td></td>
+                    <td>May 2, 2025 </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="dot"></span></td>
+                    <td><span class="status-tag status not-started">● Not started</span></td>
+                    <td></td>
+                    <td>May 2, 2025 </td>
+                    <td></td>
+                  </tr>
+                  <tr id="add-row" class="add-row clickable-row">
+                    <td colspan="5">+ New</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+          </div>
+      </div>
+
+      <div class="flex-container row-three">
+        <div class="docs-section">
+          <h2 class="docs-heading heading">Docs</h2>
+
+          <div class="docs-table">
+            <div class="docs-row">
+              <div class="title">New page</div>
+            </div>
+          
+            <div class="docs-row">
+              <div class="title">Scope</div>
+              <div class="tags">
+                <div class="tag doc">Documentation</div>
+              </div>
+            </div>
+          
+            <div class="docs-row">
+              <div class="title">Project Introduction</div>
+              <div class="tags">
+                <div class="tag notes">Notes</div>
+              </div>
+            </div>
+          
+            <div class="docs-row">
+              <div class="title">Requirements</div>
+              <div class="tags">
+                <div class="tag doc">Documentation</div>
+                <div class="tag report">Report</div>
+              </div>
+            </div>
+          
+            <div class="docs-row new-page">
+              <div class="title">+ New page</div>
+            </div>
+          </div>
+      </div>
+
+      <div class="people-section section">
+        <h2 class="people-heading heading">People</h2>
+
+        <div class="people-table">
+          <div class="docs-row">
+            <div class="name">Andrew</div>
+            <div class="info">
+              <div class="ph-no">12234567890</div>
+              <div class="email">someemail.gmail.com</div>
+            </div>
+          </div>
+
+          <div class="docs-row new-page">
+            <div class="title">+ New page</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="meetings-section">
+      <h2 class="meetings-heading heading">Meetings</h2>
+      
+      <table class="meetings-table">
+        <thead>
+          <tr>
+            <th>Meeting Title</th>
+            <th>Date & Time</th>
+            <th>In-Person/Online</th>
+            <th>Meeting Objectives</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="title">Project Introduction</td>
+            <td>December 13, 2024 – 12:30 AM</td>
+            <td><span class="inperson tag">In-Person</span></td>
+            <td class="objectives">
+              - Determine goals and discuss deliverables<br>
+              - Define scope for the project
+            </td>
+          </tr>
+          <tr>
+            <td class="title">Test</td>
+            <td>May 21, 2025</td>
+            <td><span class="online tag">Online</span></td>
+            <td class="objectives">
+              - Define the test structure<br>
+              - Fill in the specific items<br>
+              - List the objectives to be achieved
+            </td>
+          </tr>
+
+          <tr id="add-row" class="add-row clickable-row">
+            <td colspan="4">+ New</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+      
+    <div class="end"></div>
+    <script src="./script.js"></script>
+    <script src="./announcements.js"></script>
+</body>
+</html>
